@@ -1,0 +1,49 @@
+h1 {
+  font-family: Roboto;
+  color: red;
+  height: 0vh; /* 100% of the viewport height */
+  display: flex; /* Set the display property to flex */
+  justify-content: center; /* Align horizontally to the center */
+  align-items: center; /* Align vertically to the center */
+}
+
+.menu ul {
+  list-style: none; /* Remove default list bullets */
+  padding: 0;
+  margin: 0;
+  display: flex; /* Use flexbox to align the list items horizontally */
+  justify-content: center; /* Center the list items horizontally */
+}
+.menu li {
+  margin: 0 15px; /* Add space between the menu items */
+}
+p {
+  font-family: Roboto;
+  color: rgb(2, 3, 19);
+  height: 0vh; /* 100% of the viewport height */
+  display: flex; /* Set the display property to flex */
+  justify-content: center; /* Align horizontally to the center */
+  align-items: center; /* Align vertically to the center */
+}
+footer {
+  text-align: center;
+  padding: 15px;
+  position: fixed; /* Fix the footer to the bottom of the page */
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+/* Container for the image */
+.image-container {
+  width: 100%; /* Set the container to full width */
+  text-align: center; /* Centers content horizontally */
+}
+
+/* Image styling */
+img {
+  display: block; /* Make the image a block element */
+  margin-left: auto; /* Align image to the left */
+  margin-right: auto; /* Align image to the right */
+  max-width: 100%; /* Makes the image responsive */
+  height: auto; /* Maintains the aspect ratio */
+}
