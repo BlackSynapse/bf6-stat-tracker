@@ -1,11 +1,73 @@
 <!doctype html>
-<html lang="en-US">
+<html lang="en">
   <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width" />
-    <title>Sign in page</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign In — BF6 Stat Tracker</title>
+
+    <!-- Global styles -->
+    <link rel="stylesheet" href="styles.css" />
+
+    <!-- Page specific styles -->
+    <link rel="stylesheet" href="auth.css" />
   </head>
   <body>
-    <img src="" alt="My test image" />
+    <!-- Navbar -->
+    <header>
+      <nav class="menu">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="guns.html">Guns</a></li>
+          <li><a href="stats.html">Stats</a></li>
+          <li><a href="authentication.html">Sign in</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Auth Form Content -->
+    <main class="auth-main">
+      <h1>Battlefield 6 Stat Tracker</h1>
+      <p>Please log in to continue</p>
+
+      <form class="auth-form">
+        <label for="username">Username</label><br />
+        <input
+          type="text"
+          id="username"
+          name="username"
+          placeholder="Enter username"
+          required
+        /><br /><br />
+
+        <label for="password">Password</label><br />
+        <input
+          type="password"
+          id="password"
+          name="password"
+          placeholder="Enter password"
+          required
+        /><br />
+
+        <div class="show-pass">
+          <input type="checkbox" id="show-password" />
+          <label for="show-password">Show Password</label>
+        </div>
+        <br /><br />
+
+        <button type="submit">Log In</button>
+      </form>
+    </main>
+
+    <footer>
+      <p>&copy; 2026. All rights reserved.</p>
+    </footer>
+
+    <script>
+      const passInput = document.getElementById("password");
+      const showPass = document.getElementById("show-password");
+      showPass.addEventListener("change", () => {
+        passInput.type = showPass.checked ? "text" : "password";
+      });
+    </script>
   </body>
 </html>
